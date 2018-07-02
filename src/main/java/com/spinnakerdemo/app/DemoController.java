@@ -22,8 +22,6 @@ public class DemoController {
 
         response.addHeader("Cache-Control", headerValue);
         response.addHeader("Connection", "close");
-        logger.error("Meeseeks");
-        logger.info("Meeseeks");
         return "demo";
     }
 }
