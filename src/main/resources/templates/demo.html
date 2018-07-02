@@ -10,11 +10,17 @@
     
     <script>
     
-        function trigger(){
+        (function(){
+
+               function trigger(){
         window.fetch('https://us-central1-k8-spinnaker.cloudfunctions.net/report-error').then((re)=>{
             console.log(re);
          })
         }
+
+        trigger();
+
+}())
     
     </script>
 </body>
